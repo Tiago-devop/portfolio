@@ -1,13 +1,8 @@
 import { motion } from "framer-motion";
 
-const customStyles = {
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent'
-}
-
-export default function TextAnimation({ text }: { text: string }) {
+export default function TextAnimation({ text, isWhite }: { text: string, isWhite?: boolean }) {
   return (
-    <motion.div style={customStyles} className="text-4xl  font-bold text-white bg-gradient-to-r from-teal-200 to-purple-950">
+    <motion.div className={`text-7xl  font-bold ${isWhite ? 'text-white' : 'text-indigo-600'}`}>
       {text.split('').map((letter, index) => (
         <motion.span
           key={index}
