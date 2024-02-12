@@ -1,43 +1,16 @@
+import TextAnimation from "../components/TextAnimation"
+import { FaWhatsappSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+const text = "Hello world, I am Tiago Ramos"
 export default function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <TextAnimation text={text} />
+      <p>This is my Personal Portfolio, in here you can find a little bit more about me and my work.</p>
+      <div className="flex w-56 justify-between">
+        <a href="" target="_blank" rel="noopener noreferrer"><FaWhatsappSquare className="text-6xl text-red-700" /></a>
+        <a href="" target="_blank" rel="noopener noreferrer"><FaGithubSquare className="text-6xl text-red-700" /></a>
+        <a href="" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-6xl text-red-700" /></a>
+      </div>
     </div>
   )
 }
-
-/**
- * import { motion } from "framer-motion";
-import './App.css'
-
-function TextAnimation() {
-  const text = 'Hello word'
-  return (
-    <motion.div className="text">
-      {text.split('').map((letter, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0}}
-          animate={{ opacity: 1}}
-          transition={{ duration: 1, delay: index * 0.1}}
-          >
-            {letter}
-          </motion.span>
-      ))}
-    </motion.div>
-  )
-}
-
-
-
-function App() {
-
-  return (
-    <>
-      <TextAnimation />
-    </>
-  )
-}
-
-export default App
- */
