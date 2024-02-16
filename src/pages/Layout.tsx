@@ -5,7 +5,7 @@ import ImgWithTooltip from '../components/ImgWithTooltip';
 export default function Layout() {
   return (
     <div className="container min-h-screen flex mx-auto bg-[#10121A] text-white font-mono">
-      <nav className="flex flex-col items-center justify-around min-h-screen box-border border-r border-white w-80 p-4">
+      <nav className="md:flex hidden flex-col items-center justify-around min-h-screen box-border border-r border-white w-80 p-4">
         <div className='flex items-center justify-center rounded-full bg-slate-100 h-60 w-60'>
           <img src={Picture} alt="profile" className="object-cover h-56 w-56" />
         </div>
