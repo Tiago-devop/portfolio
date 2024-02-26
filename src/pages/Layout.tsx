@@ -11,11 +11,11 @@ export default function Layout() {
   const [checked, setChecked] = useState(false)
   return (
     <div className="relative container min-h-screen flex mx-auto bg-[#10121A] text-white font-mono">
-      <nav className="md:flex hidden flex-col items-center justify-around min-h-screen box-border border-r border-white w-80 p-4">
+      <nav className="md:flex hidden flex-col items-center box-border border-r border-white w-80 p-4">
         <div className='flex items-center justify-center rounded-full bg-slate-100 h-60 w-60'>
           <img src={Picture} alt="profile" className="object-cover h-56 w-56" />
         </div>
-        <div className='flex w-24 my-2 justify-around'>
+        <div className='flex w-24 my-10 justify-around'>
           <ImgWithTooltip src={Brazil} alt="Portugues" />
           <ImgWithTooltip src={US} alt="English" />
         </div>
@@ -26,7 +26,7 @@ export default function Layout() {
           <Link to="projects" className='bg-none w-40 rounded-full text-center hover:bg-indigo-600'>Projects</Link>
           <Link to="contact" className='bg-none w-40 rounded-full text-center hover:bg-indigo-600'>Contact</Link>
         </div>
-        <footer className="w-full text-center text-white font-mono font-semibold"><p>@2024 <b className='text-white font-mono font-semibold'>Portfolio - All rights reserved</b></p></footer>
+        <footer className="w-full text-center text-white font-mono font-semibold my-4"><p>@2024 <b className='text-white font-mono font-semibold'>Portfolio - All rights reserved</b></p></footer>
       </nav>
       
       <label className="md:hidden absolute top-1 left-1 btn btn-circle swap swap-rotate">
