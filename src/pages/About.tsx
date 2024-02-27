@@ -1,7 +1,9 @@
+import { LuNetwork } from "react-icons/lu";
 export default function About() {
   return (
     <div className="w-full h-full">
       <h2 className="text-7xl">ABOUT ME</h2>
+      <progress className="progress progress-primary w-56" value="50" max="100"></progress>
       <div>
         <div className="w-[500px] h-[500px] bg-slate-400 flex justify-center items-center">
           <p className="text-white text-6xl">IMG</p>
@@ -18,21 +20,28 @@ export default function About() {
         </div>
       </div>
       <h2 className="text-7xl">SERVICES</h2>
+      <progress className="progress progress-primary w-56" value="50" max="100"></progress>
       <div className="flex w-full justify-evenly">
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><div className="w-full h-72 bg-slate-400 text-6xl text-white flex justify-center items-center">IMG</div></figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            
+        <div className="card w-80 h-64 bg-base-100 shadow-xl">
+          <figure>
+            <div className="w-full h-40 flex justify-center items-center">
+              <LuNetwork className="text-7xl text-indigo-600" />
+            </div>
+          </figure>
+          <div className="card-body border-t-2 border-slate-600">
+            <h2 className="card-title">Web Design</h2>
+            <progress className="progress progress-primary w-24 h-1"></progress>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><div className="w-full h-72 bg-slate-400 text-6xl text-white flex justify-center items-center">IMG</div></figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            
+        <div className="card w-80 h-64 bg-base-100 shadow-xl">
+          <figure>
+            <div className="w-full h-40 flex justify-center items-center">
+              <LuNetwork className="text-7xl text-indigo-600" />
+            </div>
+          </figure>
+          <div className="card-body border-t-2 border-slate-600">
+            <h2 className="card-title">Problem Solving</h2>
+            <progress className="progress progress-primary w-24 h-1"></progress>
           </div>
         </div>
       </div>
