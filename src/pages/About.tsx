@@ -6,8 +6,12 @@ export default function About() {
       <h2 className="text-7xl ml-10">ABOUT ME</h2>
       <progress className="progress progress-primary w-56 ml-10" value="50" max="100"></progress>
       <div className="flex flex-col justify-center items-center mt-20">
-        <div className="w-[500px] h-[500px] border-4 border-slate-100">
+        <div className="w-[377px] h-[500px] border-4 border-slate-100">
           <img src={AboutPicture} alt="Profile Picture" className="object-cover w-full h-full" />
+        </div>
+        <div className="flex flex-col w-[400px]">
+          <h3 className="mt-7 text-4xl font-semibold">I am <span className="text-indigo-600">Tiago Ramos</span></h3>
+          <p className="text-center text-xl lg:text-2xl">I am a Frontend Developer with a passion for web design and problem solving. I am always looking for new challenges and opportunities to grow as a professional.</p>
         </div>
         <div className="flex flex-col justify-between my-10 h-80 ">
           <p className="text-2xl"><span className="font-semibold">Name:</span> Tiago Ramos Vasconcelos</p>
@@ -22,7 +26,7 @@ export default function About() {
       </div>
       <h2 className="text-7xl ml-10">SERVICES</h2>
       <progress className="progress progress-primary w-56 ml-10" value="50" max="100"></progress>
-      <div className="flex w-full justify-evenly my-40">
+      <div className="lg:flex w-full justify-evenly my-40">
         <div className="card w-80 h-64 bg-base-100 shadow-xl">
           <figure>
             <div className="w-full h-40 flex justify-center items-center">
