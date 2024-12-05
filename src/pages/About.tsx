@@ -27,7 +27,7 @@ export default function About() {
       <h2 className="text-7xl ml-10">SERVICES</h2>
       <progress className="progress progress-primary w-56 ml-10" value="50" max="100"></progress>
       <div className="lg:flex w-full justify-evenly my-40">
-        <div className="card w-80 h-64 bg-base-100 shadow-xl">
+        <div className="card w-80 h-64 bg-[#1d232a] shadow-xl">
           <figure>
             <div className="w-full h-40 flex justify-center items-center">
               <LuNetwork className="text-7xl text-indigo-600" />
@@ -38,7 +38,7 @@ export default function About() {
             <progress className="progress progress-primary w-24 h-1"></progress>
           </div>
         </div>
-        <div className="card w-80 h-64 bg-base-100 shadow-xl">
+        <div className="card w-80 h-64 bg-[#1d232a] shadow-xl">
           <figure>
             <div className="w-full h-40 flex justify-center items-center">
               <LuBrainCircuit className="text-7xl text-indigo-600" />
