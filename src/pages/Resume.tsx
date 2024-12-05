@@ -1,3 +1,4 @@
+import Timeline from "../components/Timeline"
 import { skills, languages, workExperience, education } from "../__mocks__";
 
 export default function Resume() {
@@ -36,6 +37,8 @@ export default function Resume() {
       <div>
         <h2 className="text-7xl ml-10">RESUME</h2>
         <progress className="progress progress-primary w-56 ml-10" value="50" max="100"></progress>
+
+        <Timeline />
         <div>
           <h3>WORK EXPERIENCE</h3>
         </div>
