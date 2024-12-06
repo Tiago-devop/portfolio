@@ -1,5 +1,5 @@
 import Timeline from "../components/Timeline"
-import { skills, languages, workExperience, education } from "../__mocks__";
+import { skills, languages, education } from "../__mocks__";
 
 export default function Resume() {
   return (
@@ -38,38 +38,28 @@ export default function Resume() {
         <h2 className="text-7xl ml-10">RESUME</h2>
         <progress className="progress progress-primary w-56 ml-10" value="50" max="100"></progress>
 
-        <Timeline />
         <div>
           <h3>WORK EXPERIENCE</h3>
         </div>
         <div>
-          {workExperience.map(({ company, position, startDate, endDate, description }, idx) => (
-            <div key={`work${idx}`}>
-              <h3>{company}</h3>
-              <div>
-                <h4>{position}</h4>
-                <p>{`${startDate} - ${endDate}`}</p>
-                <p>{description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>EDUCATION</h3>
+          <Timeline />
         </div>
         <div>
-          {education.map(({ institution, degree, startDate, endDate, description }, idx) => (
-            <div key={`education${idx}`}>
-              <h3>{institution}</h3>
-              <div>
-                <h4>{degree}</h4>
-                <p>{`${startDate} - ${endDate}`}</p>
-                <p>{description}</p>
+          <div>
+            <h3>EDUCATION</h3>
+          </div>
+          <div>
+            {education.map(({ institution, degree, startDate, endDate, description }, idx) => (
+              <div key={`education${idx}`}>
+                <h3>{institution}</h3>
+                <div>
+                  <h4>{degree}</h4>
+                  <p>{`${startDate} - ${endDate}`}</p>
+                  <p>{description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

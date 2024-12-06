@@ -2,7 +2,7 @@ export const workExperience = [
   {
     company: "Santuário da medalha milagrosa",
     position: "Volunteer Frontend Developer",
-    startDate: "2024/Jan",
+    startDate: "2024",
     endDate: "",
     bulletPoints: ["Application Development: Created a news management platform for PASCOM (Pastoral Communication) using React for the frontend and Strapi as the backend, facilitating the administration and dissemination of parish information.",
       "Team Collaboration: Worked closely with the pastoral team, conducting meetings to understand the specific needs of the parish, ensuring that the solution met user expectations and requirements.", "Design and Prototyping: Utilized Figma to develop interactive prototypes, allowing for a clear visualization of user flow and interface before development.", "Volunteer Work: Contributed to the project as part of a volunteer effort, dedicating time and skills to strengthen communication and evangelization within the local community.", "Feature Implementation: Integrated features that enable the publication and editing of news articles, as well as optimized the layout for an improved user experience."
