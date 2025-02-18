@@ -34,11 +34,10 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className={`timeline-${index % 2 === 0 ? "start" : "end"} mb-10 ${index % 2 === 0 && "md:text-end"}`}>
-            <time className="font-mono italic">{item.startDate}</time>
+          <div className={`timeline-${index % 2 === 0 ? "start" : "end"} mb-10 ${index % 2 === 0 && "md:text-end"} my-2 mx-1`}>
+            <time className="font-mono">06 months</time>
             <div className="text-lg font-black">{item.company}</div>
             <div className="text-sm font-bold">{item.position}</div>
-            <time className="font-mono italic">{item.endDate}</time>
             <ul className="list-disc list-inside">
               {item.bulletPoints.map((point) => (
                 <li>{point}</li>
