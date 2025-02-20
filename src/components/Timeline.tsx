@@ -21,7 +21,7 @@ export default function Timeline() {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       {data.map((item, index) => (
-        <li>
+        <li key={index}>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,14 +39,14 @@ export default function Timeline() {
             <div className="text-lg font-black">{item.company}</div>
             <div className="text-sm font-bold">{item.position}</div>
             <ul className="list-disc list-inside">
-              {item.bulletPoints.map((point) => (
-                <li>{point}</li>
+              {item.bulletPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
               ))}
             </ul>
             <div className="text-sm font-bold">Skills Acquired:</div>
             <ul className="list-disc list-inside">
-              {item.skillAcquired.map((skill) => (
-                <li>{skill}</li>
+              {item.skillAcquired.map((skill, idx) => (
+                <li key={idx}>{skill}</li>
               ))}
             </ul>
           </div>
