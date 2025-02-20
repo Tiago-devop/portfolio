@@ -21,7 +21,7 @@ const [skills, setSkills] = useState<Skill[]>([])
         setSkills(data)
       })
       .catch(error => console.log('Error:', error))
-  })
+  }, [])
 
   return (
     <div className="w-full h-full">
