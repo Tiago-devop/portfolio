@@ -43,12 +43,12 @@ const [skills, setSkills] = useState<Skill[]>([])
       <div>
         <h2 className="text-7xl ml-10">LANGUAGES</h2>
         <progress className="progress progress-primary w-56 ml-10" value="50" max="100"></progress>
-        <div>
+        <div className="mt-10 mb-10 ml-10">
           {languages.map(({ name, value }, idx) => (
-            <div key={`language${idx}`}>
+            <div className="flex flex-col" key={`language${idx}`}>
               <h3>{name}</h3>
-              <div>
-                <span>{`${value}%`}</span>
+              <div className="flex items-center">
+                <span className="block w-sm">{`${value}%`}</span>
                 <progress className="progress progress-primary w-56 ml-10" value={value} max='100'></progress>
               </div>
             </div>
@@ -70,12 +70,11 @@ const [skills, setSkills] = useState<Skill[]>([])
             <h3>EDUCATION</h3>
           </div>
           <div>
-            {education.map(({ institution, degree, startDate, endDate, description }, idx) => (
+            {education.map(({ institution, degree, description }, idx) => (
               <div key={`education${idx}`}>
                 <h3>{institution}</h3>
                 <div>
                   <h4>{degree}</h4>
-                  <p>{`${startDate} - ${endDate}`}</p>
                   <p>{description}</p>
                 </div>
               </div>

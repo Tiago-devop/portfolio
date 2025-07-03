@@ -1,16 +1,7 @@
 export const education = [
   {
-    institution: "University 1",
-    degree: "Computer Science",
-    startDate: "2012",
-    endDate: "2016",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est nec elit gravida tincidunt. Ut at odio nec elit gravida tincidunt."
+    institution: "Estácio",
+    degree: "Systems analysis and development",
+    description: "Technologist Degree focused on web/mobile systems development, databases, information security, and agile methodologies (Scrum/Kanban). Practical training to design, implement, and maintain robust computational systems, emphasizing quality, usability, and project management. Activities conducted in modern labs and virtual environments using industry-standard tools."
   },
-  {
-    institution: "University 2",
-    degree: "Web Design",
-    startDate: "2010",
-    endDate: "2012",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est nec elit gravida tincidunt. Ut at odio nec elit gravida tincidunt."
-  }
 ]
