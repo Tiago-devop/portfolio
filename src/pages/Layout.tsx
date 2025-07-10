@@ -31,7 +31,7 @@ export default function Layout() {
           <Link to="projects" className='bg-none w-40 rounded-full text-center hover:bg-indigo-600'>Projects</Link>
           <Link to="contact" className='bg-none w-40 rounded-full text-center hover:bg-indigo-600'>Contact</Link>
         </div>
-        <footer className="w-full text-center text-white font-mono font-semibold my-4"><p>@2024 <b className='text-white font-mono font-semibold'>Portfolio - All rights reserved</b></p></footer>
+        <footer className="w-full text-center text-white font-mono font-semibold my-4"><p>@{new Date().getFullYear()} <b className='text-white font-mono font-semibold'>Portfolio - All rights reserved</b></p></footer>
       </nav>
 
       <label className="md:hidden absolute top-1 left-1 btn btn-circle swap swap-rotate bg-[#191e24] hover:bg-[#323b47] border-none">

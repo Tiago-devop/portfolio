@@ -29,10 +29,7 @@ export default function About() {
         </div>
         <div className="flex flex-col justify-between my-10 h-80 ">
           <p className="text-2xl">
-            <span className="font-semibold">Name:</span> Tiago Ramos Vasconcelos
-          </p>
-          <p className="text-2xl">
-            <span className="font-semibold">Age:</span> 37
+            <span className="font-semibold">Name:</span> Tiago Ramos
           </p>
           <p className="text-2xl">
             <span className="font-semibold">Nationality:</span> Brazilian
