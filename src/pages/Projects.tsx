@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+import { projects } from "../__mocks__";
+import ProjectCard from "../components/ProjectCard.tsx" 
+
 export default function Projects() {
   return (
     <div className="size-full flex flex-col items-center">
@@ -7,8 +11,12 @@ export default function Projects() {
         value="100"
         max="100"
       ></progress>
-      <div>
-        <div className="size-[200px] border-2 border-solid"></div>
+      <div className="flex flex-wrap items-center justify-center gap-[10px]">
+        {projects.map(({img, project, webpage}) => {
+          return (
+            <ProjectCard  img={img} project={project} webpage={webpage}/>
+          )
+        })}
       </div>
     </div>
   );
